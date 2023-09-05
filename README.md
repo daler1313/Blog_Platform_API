@@ -47,6 +47,12 @@ The Blog Platform project consists of the following objects:
       - Created_at : the date and time the comment was created.
 
 
+4. Category (represents a category or industry for post classification):
+    - Name: Category name.
+    - Description: description of the category.
+    - Parent category: category name (to support tree-like categories.
+---
+
 ## Features
 
 1) Registration and Authentication: Users can register on the platform and authorize through token authentication to access secure parts of the API.

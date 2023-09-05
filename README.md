@@ -8,7 +8,6 @@ Welcome to the **Platform Blog** project! This project was created to develop a 
 
 - Development of a powerful API for managing blog posts, comments and users.
 - Providing an easy way to create, edit and delete blog posts.
-- Implementation of a system of likes and dislikes for rating posts.
 - Providing a friendly user interface for working with the API through Swagger.
 
 ## Technologies used
@@ -35,17 +34,15 @@ The Blog Platform project consists of the following objects:
 2. Post (represents a post published by the user):
     - Title: title for the post.
     - Description: description of the post.
-    - Post Date: The date and time the post was created.
-    - Date updated: date and time when the post was edited.
-    - Category: the category the post belongs to.
-    - Views: to count the number of visits to a post.
+    - User: the user who posted the post (the user's foreig key).
+    - Date: The date and time the post was created.
     - Image: The image that the user pinned when creating a post.
     
 
 
 3. Comments (represents the text that the user left on the post):
       - Text: the text that the user left.
-      - Author: the user who wrote the comment (the user's foreign key).
+      - User: the user who posted the post (the user's foreig key).
       - Post: the post that was commented on (foreign key of posts).
       - Created_at : the date and time the comment was created.
 
@@ -60,12 +57,8 @@ The Blog Platform project consists of the following objects:
 
 4) Commenting on Posts: Users can leave comments on blog posts. They can also manage their comments, edit and delete them.
 
-
 7) API documentation: The platform provides API documentation using Swagger. Users can see available APIs and their options.
 
-8) Pagination and Filtering: Post and comment lists support pagination, which improves performance and usability. An option to filter by various parameters is also available.
-
-9) Access Rights Protection: Users have access only to those functions for which they have the appropriate rights. For example, only the creator of the post, administrators, and moderators can edit or delete posts.
 
 ## License
 

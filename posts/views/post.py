@@ -11,8 +11,8 @@ class PostViewSet(viewsets.ModelViewSet):
   queryset = Post.objects.all()
   serializer_class = PostSerializer
   permission_classes = [IsAuthenticated]
-  filterset_fields = ['user']
-  search_fields = ['title', 'user']
+  filterset_fields = ['user','category']
+  search_fields = ['title', 'user', 'category']
   ordering_fields = ['title', 'date']
 
   def get_serializer_class(self):

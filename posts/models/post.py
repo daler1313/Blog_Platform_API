@@ -7,6 +7,7 @@ class Post(models.Model):
   date = models.DateTimeField(("Дата созадние"))
   image = models.ImageField("Фото",upload_to='images/')
   user = models.ForeignKey( "users.user", on_delete=models.CASCADE)
+  category = models.ManyToManyField( "categories.category")
 
   class Meta:
     verbose_name = "пост"

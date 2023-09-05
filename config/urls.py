@@ -8,6 +8,7 @@ urlpatterns = [
     path("users/", include("users.urls")),
     path("",include("posts.urls")),
     path("", include("comments.urls")),
+    path("", include("categories.urls")),
 ]
 if (settings.DEBUG):
     # swagger

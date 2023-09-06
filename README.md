@@ -75,7 +75,7 @@ The Blog Platform project consists of the following objects:
 ## How to start
 1) Clone the repository: 
 ```
-git clone https://github.com/burhonov007/platform-blog.git
+git clone https://github.com/daler1313/Blog_Platform_API.git
 ```
 2) Create a virtual environment: 
 ```
@@ -97,23 +97,14 @@ python manage.py makemigrations
 ```
 python manage.py migrate
 ```
-6) Load fixtures:
+6) Run super user:
 ```
-python manage.py load_category
-python manage.py load_users
-python manage.py load_posts
-python manage.py load_likes_dislikes
-python manage.py load_comments
+python manage.py createsuperuser
 ```
 7) Run the development server: 
 ```
 python manage.py runserver
 ```
-Open admin panel [localhost:8000/admin](http://localhost:8000/admin)
-
-Default admin: admin@example.com
-
-Default password: admin
 
 Open Swagger API documentation [localhost:8000/api/v1/swagger-ui/](http://localhost:8000/api/v1/swagger-ui/)
 
